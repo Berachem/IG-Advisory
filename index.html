@@ -806,8 +806,9 @@
                     </h1>
                     <!-- Text -->
                     <p class="lead text-center text-md-left text-muted">
-                        Concentrez-vous sur votre coeur de métier et laissez-nous faire le reste
+                        Concentrez-vous sur votre coeur de métier <br class="onlyForLargeScreen" > et laissez-nous faire le reste
                     </p>
+                    
                     <!-- Buttons 
                     <div class="text-center text-md-left mt-5">
                         <a href="#" class="btn btn-primary btn-icon">
@@ -827,11 +828,11 @@
         <div class="container">
             <!-- Title -->
             <div class="row mb-6 justify-content-center text-center">
-                <div class="col-lg-8 col-md-10">
+                <div class="col-lg-10 col-md-10">
                     <span class="badge badge-primary badge-pill">
                         Société d'expertise comptable et de conseil
                     </span>
-                    <h3 class="mt-4">Nous accompagnons les sociétés de tous types et secteurs : <br id="brOnlyforPhone"> <span class="text-primary typed" id="type-entreprises" data-type-this="PME, startup, Web3, immobilier"></span> 
+                    <h3 class="mt-5">Nous accompagnons les sociétés de tous types et secteurs <br > <span class="text-primary typed" id="type-entreprises" data-type-this="PME, Startup, Web3, Immobilier"></span> 
                         <br>
                         
                     </h3>
@@ -1019,6 +1020,7 @@
                     <div class="col-md-6">
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
                             &copy; 2022 I&G Advisory. Tous droits réservés. 
+                            <br class="onlyForLargeScreen">
                             Site internet réalisé par <a id="berachem" href="https://berachem.dev" class="font-weight-bold" target="_blank">Berachem MARKRIA</a>.
                         </div>
                         <style>
@@ -1031,7 +1033,7 @@
                         <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="mentions-legales.html">
-                                    Informations légales
+                                    Mentions légales
                                 </a>
                             </li>
                         </ul>
@@ -1069,5 +1071,14 @@
         AOS.init();
       </script>
 </body>
-
+<style>
+    /* mobile */
+    @media (max-width: 767px) {
+        .onlyForLargeScreen {
+            display: none;
+        }
+    }
+    
+    
+</style>
 </html>
